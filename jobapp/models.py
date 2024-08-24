@@ -38,7 +38,7 @@ class Job(models.Model):
     is_published = models.BooleanField(default=False)
     is_closed = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now=True)
-
+    skills = models.JSONField()
 
     def __str__(self):
         return self.title
@@ -50,7 +50,7 @@ class Applicant(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     job = models.ForeignKey(Job, on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now=True, auto_now_add=False)
-
+     
 
     def __str__(self):
         return self.job.title

@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Roboto, Arial;
+}
+/* Welcome Page */
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+.content {
+  flex: 1fr;
+}
+
+.link-btn {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 30px;
+}
+
+.link-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Form Page */
+
+/* Form Main Container */
+.form_main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Section Container */
+.form_section {
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Form Input Styles */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Form Button Styles */
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Template Selection Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form_main {
+    max-width: 100%;
+  }
+}
+
+
+.template-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.form-check {
+    display: inline-block;
+    position: relative;
+}
+
+.template-label img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.template-label.selected img {
+    border-color: black;
+}
